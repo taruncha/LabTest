@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+    body{
+        background-color: #57837B;
+    }
+    #light{
+    
+        background-color: #C2FFD9;
+    }
+    #dark{
+        color: snow;
+        background-color: #003638;
+    }
+ 
+</style>
+</head>
+<body>
+    <div class="container" >
+        <div class="row mt-5 " id="light"  >
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card1">
+                    <div class="card-body">
+                        <div class="text-center mt-0"><input type="checkbox" onclick="clicked(1)"  id="check1" /></div>
+                            <img class="card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                        <div class="card-body">
+                            <b>Name: </b> <span id="name1">Nike Shoe</span><br>
+                            <b>Desciption: </b> Red Color casual shoe<br>
+                            <b>Price: </b><span id="price1">1000</span><br>
+                        <div class="row">
+                            <div class="col-2"><span><b>Qty:</b></span></div>
+                            <div class="col-6"><input value="1" id="quantity1"  onblur="validation(1)" class="form-control"  type="text"></div>
+                            <div class="col-4"><span id="pattern1" style="color: red;"></span> </div>
+                        </div>                         
+                   </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card2">
+                <div class="card-body">
+                    <div class="text-center mt-0"><input type="checkbox" onclick="clicked(2)"  id="check2" /></div>
+                        <img class="card-img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name2">Boat Headfone</span><br>
+                        <b>Desciption: </b>Deep Bass Wireless <br>
+                        <b>Price: </b><span id="price2">2000</span><br>
+                    <div class="row">
+                        <div class="col-2"><span><b>Qty:</b></span></div>
+                        <div class="col-6"><input id="quantity2" value="1"  onblur="validation(2)" class="form-control" type="text"  ></div>
+                        <div class="col-4"><span id="pattern2" style="color: red;"></span> </div>
+                    </div>                         
+               </div>
+            </div>
+        </div>
+        <div class="card-fluid border border-dark rounded col-3 p-0" id="card3">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="clicked(3)"  id="check3" /></div>
+                    <img class="card-img" src="https://images.unsplash.com/photo-1610395219791-21b0353e43cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="card-body">
+                    <b>Name: </b> <span id="name3">Watch</span><br>
+                    <b>Desciption: </b> Analog wrist watch<br>
+                    <b>Price: </b><span id="price3">1600</span><br>
+                <div class="row">
+                    <div class="col-2"><span><b>Qty:</b></span></div>
+                    <div class="col-6"><input  value="1" id="quantity3" onblur="validation(3)"  class="form-control" type="text"></div>
+                    <div class="col-4"><span id="pattern3" style="color: red;"></span> </div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card4">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="clicked(4)"  id="check4" /></div>
+                <img class="card-img" src="https://images.unsplash.com/photo-1608223652565-63abae6cf733?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+                <b>Name: </b> <span id="name4">JBL Speaker</span><br>
+                <b>Desciption: </b> Deep Bass Clear voice<br>
+                <b>Price: </b><span id="price4">4000</span><br>
+            <div class="row">
+                <div class="col-2"><span><b>Qty:</b></span></div>
+                <div class="col-6"><input value="1" id="quantity4"  onblur="validation(4)" class="form-control" type="text"></div>
+                <div class="col-4"><span id="pattern4" style="color: red;"></span> </div>
+            </div>                         
+       </div>
+    </div>
+</div>
+</div>
+<div class="row mt-5 "  id="dark" >
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card5">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="clicked(5)"  id="check5" /></div>
+                    <img class="card-img" src="https://images.unsplash.com/photo-1585565804112-f201f68c48b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="card-body">
+                    <b>Name: </b><span id="name5"> Airpods</span><br>
+                    <b>Desciption: </b> Deep Bass Wireless<br>
+                    <b>Price: </b><span id="price5">10000</span><br>
+                <div class="row">
+                    <div class="col-2"><span><b>Qty:</b></span></div>
+                    <div class="col-6"><input value="1" id="quantity5"  onblur="validation(5)" class="form-control" type="text"></div>
+                    <div class="col-4"><span id="pattern5" style="color: red;"></span> </div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0"  id="card6">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="clicked(6)"  id="check6" /></div>
+                <img class="card-img" src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+                <b>Name: </b><span id="name6"> Mouse</span><br>
+                <b>Desciption: </b> Wireless 8hr Battery backup <br>
+                <b>Price: </b><span id="price6">1000</span><br>
+            <div class="row">
+                <div class="col-2"><span><b>Qty:</b></span></div>
+                <div class="col-6"><input value="1" id="quantity6"  onblur="validation(6)" class="form-control" type="text"></div>
+                <div class="col-4"><span id="pattern6" style="color: red;"></span> </div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card7">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="clicked(7)"  id="check7" /></div>
+            <img class="card-img" src="https://images.unsplash.com/photo-1604527039309-8044c298ba46?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+        <div class="card-body">
+            <b>Name: </b> Camera<br>
+            <b>Desciption: </b><span id="name7"> 80mp nikon camera with extra lens</span><br>
+            <b>Price: </b><span id="price7">40000</span><br>
+        <div class="row">
+            <div class="col-2"><span><b>Qty:</b></span></div>
+            <div class="col-6"><input value="1" id="quantity7"  onblur="validation(7)" class="form-control" type="text"></div>
+            <div class="col-4"><span id="pattern7" style="color: red;"></span> </div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card8">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="clicked(8)"  id="check8" /></div>
+        <img class="card-img" src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    <div class="card-body">
+        <b>Name: </b> Google<br>
+        <b>Desciption: </b><span id="name8"> Blue cut glasses</span> <br>
+        <b>Price: </b><span id="price8">4000</span><br>
+    <div class="row">
+        <div class="col-2"><span><b>Qty:</b></span></div>
+        <div class="col-6"><input value="1" id="quantity8"  onblur="validation(8)"  class="form-control" type="text"></div>
+        <div class="col-4"><span id="pattern8" style="color: red;"></span> </div>
+    </div>                         
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-5" id="light" >
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card9">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="clicked(9)"  id="check9" /></div>
+                    <img class="card-img" src="https://images.unsplash.com/photo-1610018817073-fe06110e6693?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="card-body">
+                    <b>Name: </b><span id="name9"> Toy car</span><br>
+                    <b>Desciption: </b> Wireless Battery backup 10hr<br>
+                    <b>Price: </b><span id="price9">10000</span><br>
+                <div class="row">
+                    <div class="col-2"><span><b>Qty:</b></span></div>
+                    <div class="col-6"><input value="1" id="quantity9" onblur="validation(9)"  class="form-control" type="text"></div>
+                    <div class="col-4"><span id="pattern9" style="color: red;"></span> </div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card10">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="clicked(10)"  id="check10" /></div>
+                <img class="card-img" src="https://images.unsplash.com/photo-1623998021451-306e52f35634?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+                <b>Name: </b><span id="name10"> Noise earphone</span><br>
+                <b>Desciption: </b> Deep bass Noise cancellation<br>
+                <b>Price: </b><span id="price10">1000</span><br>
+            <div class="row">
+                <div class="col-2"><span><b>Qty:</b></span></div>
+                <div class="col-6"><input value="1" id="quantity10"  onblur="validation(10)" class="form-control" type="text"></div>
+                <div class="col-4"><span id="pattern10" style="color: red;"></span> </div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card11">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="clicked(11)"  id="check11" /></div>
+            <img class="card-img" src="https://images.unsplash.com/photo-1596803244535-925769f389fc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+        <div class="card-body">
+            <b>Name: </b> <span id="name11"> Coke</span><br>
+            <b>Desciption: </b> Suger free 20ml<br>
+            <b>Price: </b><span id="price11">10</span><br>
+        <div class="row">
+            <div class="col-2"><span><b>Qty:</b></span></div>
+            <div class="col-6"><input value="1" id="quantity11"  onblur="validation(11)" class="form-control" type="text"></div>
+            <div class="col-4"><span id="pattern11" style="color: red;"></span> </div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card12">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="clicked(12)"  id="check12" /></div>
+        <img class="card-img" src="https://images.unsplash.com/photo-1499438182938-87d87862e154?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    <div class="card-body">
+        <b>Name: </b> <span id="name12"> Bicycle</span><br>
+        <b>Desciption: </b>4 Gear Hybrid cycle<br>
+        <b>Price: </b><span id="price12">3600</span><br>
+    <div class="row">
+        <div class="col-2"><span><b>Qty:</b></span></div>
+        <div class="col-6"><input value="1" id="quantity12" onblur="validation(12)"  class="form-control" type="text"></div>
+        <div class="col-4"><span id="pattern12" style="color: red;"></span> </div>
+    </div>                         
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-5" id="dark">
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card13">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="clicked(13)"  id="check13" /></div>
+                    <img class="card-img" src="https://images.unsplash.com/photo-1493878777218-cf22a808450c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="card-body">
+                    <b>Name: </b><span id="name13"> Keyboard</span><br>
+                    <b>Desciption: </b> Silver and white Keyboard<br>
+                    <b>Price: </b><span id="price13">8000</span><br>
+                <div class="row">
+                    <div class="col-2"><span><b>Qty:</b></span></div>
+                    <div class="col-6"><input value="1" id="quantity13" onblur="validation(13)"  class="form-control" type="text"></div>
+                    <div class="col-4"><span id="pattern13" style="color: red;"></span> </div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card14">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="clicked(14)"  id="check14" /></div>
+                <img class="card-img" src="https://images.unsplash.com/photo-1619183744799-68f1fd8f1edb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTd8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+                <b>Name: </b><span id="name14"> MacBook</span><br>
+                <b>Desciption: </b>Apple M1 chip with 8‑core CPU <br>
+                <b>Price: </b><span id="price14">400000</span><br>
+            <div class="row">
+                <div class="col-2"><span><b>Qty:</b></span></div>
+                <div class="col-6"><input value="1" id="quantity14"  onblur="validation(14)" class="form-control" type="text"></div>
+                <div class="col-4"><span id="pattern14" style="color: red;"></span> </div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card15">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="clicked(15)"  id="check15" /></div>
+            <img class="card-img" src="https://images.unsplash.com/photo-1606295494450-abf3b5ae5e31?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fHByb2R1Y3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+        <div class="card-body">
+            <b>Name: </b> <span id="name15"> Bag</span><br>
+            <b>Desciption: </b>Grey and brown Messanger bag<br>
+            <b>Price: </b><span id="price15">1200</span><br>
+        <div class="row">
+            <div class="col-2"><span><b>Qty:</b></span></div>
+            <div class="col-6"><input value="1" id="quantity15" onblur="validation(15)" class="form-control" type="text"></div>
+            <div class="col-4"><span id="pattern15" style="color: red;"></span> </div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card16">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="clicked(16)"  id="check16" /></div>
+        <img class="card-img" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA0fHxwcm9kdWN0fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    <div class="card-body">
+        <b>Name:</b> <span id="name16"> Chair table combo</span><br>
+        <b>Desciption:</b> White wooden table with brown chair<br>
+        <b>Price:</b><span id="price16">1500</span><br>
+    <div class="row">
+        <div class="col-2"><span><b>Qty:</b></span></div>
+        <div class="col-6"><input value="1" id="quantity16" onblur="validation(16)" class="form-control" type="text"></div>
+        <div class="col-4"><span id="pattern16" style="color: red;"></span> </div>
+    </div>                         
+</div>
+</div>
+</div>
+</div>
+<br>
+<h3 class="fw-normal">Ordered Item</h3>
+<div class="row">
+    <div class="col-12">
+        <table id="tab" class="">
+
+        </table>
+    </div>
+    
+    <br>
+</div>
+<hr>
+<button type="button" class="btn btn-primary rounded-pill px-5 py-2" id="sum" onclick="totalSum()">Display Total Amount for Shopping</button><br><br><br><br><br>
+    </div><!--Container div  -->
+    <script>
+        var flag=true
+var pattern=/^([0-9]+)$/
+      function validation(v){
+          var qty=document.getElementById("quantity"+v).value
+   if (qty.match(pattern)) {
+       flag=true
+       document.getElementById("pattern"+v).innerHTML=''
+   } else {
+    document.getElementById("pattern"+v).innerHTML='Enter number'
+    flag= false
+   }
+      }
+
+var sum=0;
+var count=0;
+
+        function clicked(a){
+            validation(a);
+    if (flag) {
+        var check = document.getElementById('check'+a)
+    if (check.checked) {
+
+       document.getElementById('quantity'+a) .disabled=true
+        
+	   document.getElementById('card'+a).style.backgroundColor='#F4D160'
+       var ele=document.createElement("tr")
+       ele.id="row"+a
+       document.getElementById('tab').appendChild(ele)
+
+       var el=document.createElement('td')
+       el.id=a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="item"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="pric"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="quant"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="total"+a
+       document.getElementById('row'+a).appendChild(el)
+      
+     var name = document.getElementById("name"+a)
+     var price =document.getElementById("price"+a)
+     
+     var totalQuantity = document.getElementById("quantity"+a).value
+
+        var pr=parseInt(price.textContent)*totalQuantity
+    
+     
+        sum+=pr
+     count++
+     document.getElementById(a).innerHTML=count+'.&emsp;'
+     document.getElementById("item"+a).innerHTML=name.textContent+'&emsp;'
+     document.getElementById("pric"+a).innerHTML=price.textContent+'&emsp;'
+     document.getElementById("quant"+a).innerHTML=totalQuantity+'&emsp;'
+     document.getElementById('total'+a).innerHTML=pr+"&emsp;"
+
+     document.getElementById("pattern"+a).innerHTML="Thanks for adding"
+    }else{
+        count--
+        var price =document.getElementById("price"+a)
+        var totalQuantity = document.getElementById("quantity"+a).value
+        var pr=parseInt(price.textContent)*totalQuantity
+        sum-=pr
+        document.getElementById('quantity'+a) .disabled=false
+        document.getElementById(a).innerHTML=count+'.&emsp;'
+    document.getElementById('tab').removeChild(document.getElementById('row'+a))
+        if (1<=a&&a<=4||9<=a&&a<=12) {
+            document.getElementById('card'+a).style.backgroundColor='#C2FFD9'
+            document.getElementById("pattern"+a).innerHTML=""
+        } else if (5<=a&&a<=8||13<=a&&a<=16) {
+                document.getElementById('card'+a).style.backgroundColor='#003638'
+                document.getElementById("pattern"+a).innerHTML=""
+            }
+    }
+  
+    } else {
+        document.getElementById("pattern"+a).innerHTML="Please Enter number"
+    }
+}
+function totalSum(){
+alert("Total sum: "+sum)
+}
+
+    </script>
+</body>
+</html>
